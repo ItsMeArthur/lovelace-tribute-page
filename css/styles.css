@@ -16,6 +16,7 @@
 	width: 70%;
 }
 .md-image-limit {
+	width: 100%;
 	max-width: 560px;
 }
 body { 
@@ -45,7 +46,7 @@ hr.style-old:before {
     border-radius: 20px;
 }
 
-footer {
+.page-footer {
 	border-radius: 5px;
 	color: white;
 	background-color: black;
