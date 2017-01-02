@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- 
+		The viewport tag it's used to givw instructions on how to scale the page to the user .
+		- width=device-width: Tells the browser to set the page width the same as the device width. 
+		- initial-scale=1.0 - Set's the initial zoom level for when the page is loaded.
+	-->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+	<style type="text/css">
+		.year {
+			font-weight: bolder;
+		}
+		.timeline li {
+			margin-bottom: 15px
+		}
+		.img-portrait {
+			border: solid;
+			border-width: 3px;
+			border-color: black;
+		}
+		.cursive-header{
+			font-family: 'Great Vibes', cursive;
+		}
+		.midquote {
+			width: 70%;
+		}
+		.md-image-limit {
+			max-width: 560px;
+		}
+		body { 
+		  background: #ebebeb; 
+		} 
+		.container { 
+		  background: #fff; 
+		}
+
+		/* Flaired edges, by Tomas Theunissen */
+
+		hr.style-old {
+		    height: 30px;
+		    border-style: solid;
+		    border-color: #CCCCCC;
+		    border-width: 1px 0 0 0;
+		    border-radius: 20px;
+		}
+		hr.style-old:before { 
+		    display: block;
+		    content: "";
+		    height: 30px;
+		    margin-top: -31px;
+		    border-style: solid;
+		    border-color: #CCCCCC;
+		    border-width: 0 0 1px 0;
+		    border-radius: 20px;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- 
+	Bootstrap pages should have a container element in order to house the grid systen. Also, containers
+	shoouldn't be nested inside another containers.  
+	- container: Has fixed width that changes according to the size of the viewport.
+	- container-fluid: Spans throught the entire size of the viewport, regardless of the size of it.
+	-->
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			  <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+			</button>
+		</div>
+
+		<div id="navbar" class="navbar navbar-default">
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Timeline</a></li>
+					<li><a href="#">Images</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="jumbotron">
+			<img alt="Ada Lovelace" src="./img/lovelace_portrait.jpg" width="100px" height="auto" class="img-portrait img-circle center-block">
+			<h1 class="text-center cursive-header">Lorem ipsum dolor sit amet</h1>
+			<h2 class="cursive-header">Maecenas sed vestibulum sem. In tincidunt ante id scelerisque euismod.</h2>
+		</div>	
+
+
+		<div class="row">
+			<div class="col-md-8">
+				<h3>About Lovelace</h3>
+				<p>Augusta Ada King-Noel, Countess of Lovelace was an English mathematician and writer, chiefly known for her work on <a href="https://en.wikipedia.org/wiki/Charles_Babbage">Charles Babbage</a>'s early mechanical general-purpose computer, the Analytical Engine. Her notes on the engine include what is recognised as the first algorithm intended to be carried out by a machine. As a result, she is often regarded as the first computer programmer.</p>
+
+				<h3>Brief Timeline</h3>
+				<article>
+					<ul class="timeline">
+						<li><span class="year">Dec 1815</span> - Born under the name Ada Augusta Byron , she was the only child of the poet George Gordon the 6th (Lord Byron) and his wife, Anne Isabella "Annabella" Milbanke (Baroness Wentworth). </li>
+						<li><span class="year">Jan 1816</span> - Parents Separate </li>
+						<li><span class="year">Apr 1824</span> - Lord Byron (Ada's father) dies in a war in greece when she was eight years old.</li>
+						<li><span class="year">Jan 1828</span> - Ada designs a flying machine. </li>
+						<li><span class="year">Oct 1829</span> - Ada gets measles and is unable to leave bed. This last 3 years. </li>
+						<li><span class="year">Apr 1832</span> - Recovers from measles. She can walk with crutches. </li>
+						<li><span class="year">Jan 1833</span> - Ada meets Charles Babbage. He disscusses he's difference engine with her. She is inspire by his words. </li>
+						<li><span class="year">Jul 1835</span> - Ada weds William King. </li>
+						<li><span class="year">May 1836</span> - Ada's first child is born. </li>
+						<li><span class="year">Sep 1837</span> - Ada's second child is born </li>
+						<li><span class="year">Jun 1838</span> - Ada becomes Countess of Lovelace </li>
+						<li><span class="year">Jul 1839</span> - Ada's third child is born</li>
+						<li><span class="year">Aug 1843</span> - Ada's translation and Notes on the analytical engine are published. This is her life's achievement; inside is what is consider to by the worlds first computer program. </li>
+						<li><span class="year">Nov 1852</span> - Lovelace died at the age of thirty-six from uterine cancer and bloodletting by her physicians. She was buried, at her request, next to her father at the Church of St. Mary Magdalene in Hucknall, Nottingham.</li>
+					</ul>			
+				</article>
+			</div>
+
+			<div class="col-md-4">
+				<h3 class="text-center">Quisque condimentum</h3>
+				<figure>
+					<img src="./img/lovelace_portrait.jpg" class="img-responsive img-rounded" alt="A portrait of Ada Lovelace">	
+					<figcaption> Vestibulum lobortis ante quis pellentesque cursus. </figcaption>
+				</figure>				
+			</div>
+		</div>
+
+		<hr class="style-old">
+
+		<div class="row">
+			<div class="col-md-12">
+			<h3>Quotes</h3>
+				<blockquote class="midquote center-block">
+					"A new, a vast, and a powerful language is developed for the future use of analysis, in which to wield its truths so that these may become of more speedy and accurate practical application for the purposes of mankind than the means hitherto in our possession have rendered possible."
+					<footer>Ada Lovelace</footer>
+				</blockquote>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<blockquote class="midquote center-block">
+					"The science of operations, as derived from mathematics more especially, is a science of itself, and has its own abstract truth and value."
+					<footer>Ada Lovelace</footer>
+				</blockquote>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<blockquote class="midquote center-block">
+					"Imagination is the Discovering Faculty, pre-eminently. It is that which penetrates into the unseen worlds around us, the worlds of Science."
+					<footer>Ada Lovelace</footer>
+				</blockquote>
+			</div>
+		</div>
+
+		<hr class="style-old">
+
+		<div class="row">
+			<div class="col-md-12">
+				<h3>Her Work</h3>
+				<figure>
+					<a href="https://upload.wikimedia.org/wikipedia/commons/c/cf/Diagram_for_the_computation_of_Bernoulli_numbers.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Diagram_for_the_computation_of_Bernoulli_numbers.jpg" alt="Diagram for the computation of Bernoulli numbers" class="img-responsive md-image-limit img-thumbnail center-block"></a>
+					<figcaption class="text-center">Lovelace's diagram from Note G, the first published computer algorithm.</figcaption>
+				</figure>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<h3>Read More</h3>
+				<p>Click here and read more information about Ada Lovelace.</p>
+			</div>
+		</div>
+	
+	</div>
+</body>
+</html>
