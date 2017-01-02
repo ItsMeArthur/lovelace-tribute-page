@@ -7,60 +7,12 @@
 		- width=device-width: Tells the browser to set the page width the same as the device width. 
 		- initial-scale=1.0 - Set's the initial zoom level for when the page is loaded.
 	-->
-
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
 	<script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
-	<style type="text/css">
-		.year {
-			font-weight: bolder;
-		}
-		.timeline li {
-			margin-bottom: 15px
-		}
-		.img-portrait {
-			border: solid;
-			border-width: 3px;
-			border-color: black;
-		}
-		.cursive-header{
-			font-family: 'Great Vibes', cursive;
-		}
-		.midquote {
-			width: 70%;
-		}
-		.md-image-limit {
-			max-width: 560px;
-		}
-		body { 
-		  background: #ebebeb; 
-		} 
-		.container { 
-		  background: #fff; 
-		}
-
-		/* Flaired edges, by Tomas Theunissen */
-
-		hr.style-old {
-		    height: 30px;
-		    border-style: solid;
-		    border-color: #CCCCCC;
-		    border-width: 1px 0 0 0;
-		    border-radius: 20px;
-		}
-		hr.style-old:before { 
-		    display: block;
-		    content: "";
-		    height: 30px;
-		    margin-top: -31px;
-		    border-style: solid;
-		    border-color: #CCCCCC;
-		    border-width: 0 0 1px 0;
-		    border-radius: 20px;
-		}
-	</style>
 </head>
 <body>
 
@@ -71,29 +23,10 @@
 	- container-fluid: Spans throught the entire size of the viewport, regardless of the size of it.
 	-->
 	<div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-			  <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-			</button>
-		</div>
-
-		<div id="navbar" class="navbar navbar-default">
-			<div class="collapse navbar-collapse">
-				<ul class="nav navbar-nav">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Timeline</a></li>
-					<li><a href="#">Images</a></li>
-				</ul>
-			</div>
-		</div>
-
 		<div class="jumbotron">
 			<img alt="Ada Lovelace" src="./img/lovelace_portrait.jpg" width="100px" height="auto" class="img-portrait img-circle center-block">
-			<h1 class="text-center cursive-header">Lorem ipsum dolor sit amet</h1>
-			<h2 class="cursive-header">Maecenas sed vestibulum sem. In tincidunt ante id scelerisque euismod.</h2>
+			<h1 class="text-center cursive-header">Ada Lovelace's Tribute Page</h1>
+			<h2 class="text-center cursive-header">Welcome to a tribute page for the first known programmer in history.</h2>
 		</div>	
 
 
@@ -124,10 +57,10 @@
 			</div>
 
 			<div class="col-md-4">
-				<h3 class="text-center">Quisque condimentum</h3>
+				<h3 class="text-center">Ada Lovelace</h3>
 				<figure>
-					<img src="./img/lovelace_portrait.jpg" class="img-responsive img-rounded" alt="A portrait of Ada Lovelace">	
-					<figcaption> Vestibulum lobortis ante quis pellentesque cursus. </figcaption>
+					<img src="./img/lovelace_portrait_2.jpg" class="img-responsive img-rounded" alt="A portrait of Ada Lovelace">	
+					<figcaption> Portrait of Ada by British painter Margaret Sarah Carpenter (1836). </figcaption>
 				</figure>				
 			</div>
 		</div>
@@ -175,10 +108,12 @@
 		<div class="row">
 			<div class="col-md-12">
 				<h3>Read More</h3>
-				<p>Click here and read more information about Ada Lovelace.</p>
+				<p><a href="https://en.wikipedia.org/wiki/Ada_Lovelace">Click here and read more information about Ada Lovelace.</a></p>
 			</div>
 		</div>
-	
+		<footer>
+			<p class="text-center">Coded by <a href="https://github.com/andradedearthur">Arthur D. de Andrade</a>. Information gathered from <a href="https://en.wikipedia.org">Wikipedia.</a></p>
+		</footer>	
 	</div>
 </body>
 </html>
